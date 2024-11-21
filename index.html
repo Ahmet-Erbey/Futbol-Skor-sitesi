@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maç Skoru</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="teamA" class="team">
+            <h2 id="nameA">Team A</h2>
+            <p id="scoreA">0</p>
+            <div class="score-controls">
+                <button onclick="increaseScore('A')">+</button>
+                <button onclick="decreaseScore('A')">-</button>
+                
+            </div>
+         <button onclick="setScorePrompt('A')">Skor Ayarla</button>
+         <button onclick="setTeamNameprompt('A')">İsim Ayarla</button>
+         <button onclick="resetScore('A')">Reset</button>
+        </div>
+        <div id="teamB" class="team">
+            <h2 id="nameB">Team B</h2>
+            <p id="scoreB">0</p>
+            <div class="score-controls">
+                <button onclick="increaseScore('B')">+</button>
+                <button onclick="decreaseScore('B')">-</button>
+                
+            </div>
+         <button onclick="setScorePrompt('B')">Skor Ayarla</button>
+         <button onclick="setTeamNameprompt('B')">İsim Ayarla</button>
+         <button onclick="resetScore('B')">Reset</button>
+        </div>
+    </div>
+   <script src="script.js"></script> 
+</body>
+</html>
